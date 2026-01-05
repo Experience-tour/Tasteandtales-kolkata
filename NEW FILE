@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste & Tales | Kolkata Food Walks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; color: #1a1a1a; }
+        
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 0 20px;
+        }
+        .hero-content h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 600; margin-bottom: 1.5rem; }
+        .hero-content p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 2.5rem; opacity: 0.95; }
+        .cta-primary { 
+            background: white; color: #667eea; padding: 16px 40px; font-size: 1.1rem; 
+            border: none; border-radius: 50px; font-weight: 500; cursor: pointer; 
+            transition: all 0.3s; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+
+        .section { padding: 100px 0; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        .features { background: #f8fafc; }
+        .features-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 4rem;
+        }
+        .feature {
+            background: white; padding: 40px 30px; border-radius: 20px; text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: all 0.3s;
+        }
+        .feature:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+        .feature-icon { font-size: 3.5rem; margin-bottom: 1.5rem; display: block; }
+        .feature h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: #1a1a1a; }
+
+        .pricing { text-align: center; }
+        .price-card {
+            background: white; max-width: 400px; margin: 0 auto; padding: 50px 40px;
+            border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        .price { font-size: 4rem; font-weight: 700; color: #667eea; margin: 1rem 0; }
+
+        footer {
+            background: #1a1a1a; color: white; text-align: center; padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Kolkata Food Walks</h1>
+            <p>4-hour guided street food adventure through Kolkata's hidden culinary gems. Authentic Bengali flavors, local stories.</p>
+            <button class="cta-primary" onclick="bookNow()">Book Experience →</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem; font-weight: 600;">What You'll Taste</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <span class="feature-icon">🌶️</span>
+                    <h3>Phuchka Trail</h3>
+                    <p>7 legendary stalls across old Kolkata. Spice progression from tamarind bliss to chilli fire.</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🥚</span>
+                    <h3>Kathi Roll Legacy</h3>
+                    <p>Original Nizam's recipe since 1932. Paratha perfection with egg, chicken, mutton options.</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🍮</span>
+                    <h3>Sweet Street Saga</h3>
+                    <p>150-year-old rasgulla tradition. Three generational sweet shops, sponge perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing section">
+        <div class="container">
+            <div class="price-card">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Full Food Odyssey</h2>
+                <div class="price">₹2,499</div>
+                <p style="color: #666; margin-bottom: 2rem;">4 hours • Small groups • All food included</p>
+                <button class="cta-primary" onclick="bookNow()" style="width: 100%; margin-bottom: 1rem;">Reserve Spot</button>
+                <p style="color: #666; font-size: 0.95rem;">Next tours: Daily 4PM from New Market</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Taste & Tales Kolkata | Authentic street food experiences since 2023<br>
+            <strong>Experience Kolkata's soul, one bite at a time.</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        function bookNow() {
+            window.open('https://www.airbnb.com/experiences/12345678', '_blank');
+        }
+    </script>
+</body>
+</html>
